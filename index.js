@@ -47,7 +47,7 @@ function test(states){
     if(visitedStateArray.filter(x => !x).length > 0){//mientras encuentre un estado en falso del arreglo va a seguir iterando
         document.getElementById("log").innerHTML+="<br>Estado Actual: ".concat(visited).concat(" ||||||||||||| Siguiente Estado: ").concat(siguienteEstado);
         visitedStateArray[visited] = true
-        setTimeout(function(){ test(states); }, 50);
+        setTimeout(function(){ test(states); }, 2000);
     }else{
         document.getElementById("log").innerHTML+="<br><h2>VISITO 8 ESTADOS</h2>"
     }
